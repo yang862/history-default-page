@@ -1,2 +1,3 @@
 # history-default-page
-history-default-page example
+
+history-default-example page
