@@ -9,6 +9,22 @@
   <meta http-equiv="Cache" content="no-cache">
   <title>home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://unpkg.com/analytics/dist/analytics.min.js"></script>
+  <script src="https://unpkg.com/@analytics/google-analytics/dist/@analytics/google-analytics.min.js"></script>
+  <script type="text/javascript">
+    /* Initialize analytics */
+    var Analytics = _analytics.init({
+      app: 'my-app-name',
+      plugins: [
+        analyticsGa.init({
+          trackingId: 'UA-1234567'
+        })
+      ]
+    })
+
+    /* Track a page view */
+    analytics.page()
+  </script>
 </head>
 
 <body>
